@@ -111,7 +111,7 @@ shiftCor_fn<-function (samPeno, samFile, Frule = 0.8, QCspan = 0.75, degree = 2,
       }
       return(x)
     }
-    inputedData = missvalue(imsamFP, classF)
+    inputedData = minValue(imsamFP, classF)
     inputedData = inputedData[, -1]
   }
   else if (imputeM == "median") {
