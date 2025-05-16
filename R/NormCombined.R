@@ -85,7 +85,7 @@ NormCombined <-function(featuredata,
   } else if (method1 %in% c("rlsc")){
     # if (is.null(sampledata)) THESE WARNINGS IN INDIVIDUAL METHODS?
     #   stop("Enter sampledata for the qcrlsc method.")
-    out1<-NormQcsamples(featuredata, method = method1,lg=FALSE,...) # sampledata=sampledata, ...)
+    out1<-NormQcsamples(featuredata, method = method1,...) # sampledata=sampledata, ...)
   } else if (method1 %in% c("median", "mean", "sum", "ref")){
     out1 <-NormScaling(featuredata, method = method1, ...)
   }
